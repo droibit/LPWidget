@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">LP Timer</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="button_text_plus">+</string>
+    <string name="button_text_minus">-</string>
+    <string name="text_current_point">現在 :</string>
+    <string name="text_max_point">最大 :</string>
+    <string name="text_remaining_time">00:00:00</string>
+    <string name="button_text_play">開始</string>
+    <string name="button_text_stop">停止</string>
+    <string name="edit_text_point_error">数値を入力してください</string>
+    <string name="edit_text_point_error_min_format">%1$dより大きい数値を入力してください</string>
+    <string name="edit_text_point_error_max_format">%1$d以下の数値を入力してください</string>
+    <string name="toast_point_is_empty">LPが空の項目があります</string>
+    <string name="toast_point_contains_character">数字以外の値が入力されています</string>
+    <string name="toast_point_reversal">現在のLPが最大値を超えています</string>
+    <string name="toast_point_is_full">LPは最大まで回復しています</string>
+    <string name="notification_begin_ticker">LP回復開始</string>
+    <string name="notification_begin_title">LP回復中…</string>
+    <string name="notification_begin_content_format">LP : %1$s/%2$s</string>
+    <string name="notification_finish_title">LPが全回復しました</string>
+    <string name="notification_finish_content_format">MAX : %1$s</string>
+</resources>

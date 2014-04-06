@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <integer name="num_of_min_current_point">0</integer>
+    <integer name="num_of_min_max_point">25</integer>
+    <integer name="num_of_max_max_point">500</integer>
+</resources>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="EditablePointView">
+        <attr name="point_text" format="string" />
+        <attr name="min_point" format="integer" />
+        <attr name="max_point" format="integer" />
+    </declare-styleable>
+</resources>
