@@ -29,7 +29,7 @@ public class TimerService extends Service {
 
     private static final long INTERVAL_MILLS_ONE_SECONDS = TimeUnit.SECONDS.toMillis(1);
     private static final long INTERVAL_MILLS_ONE_MINUTES = TimeUnit.MINUTES.toMillis(1);
-    private static final long INTERVAL_MILLS_FIVE_MINUTES = TimeUnit.MINUTES.toMillis(5);
+    private static final long INTERVAL_MILLS_SIX_MINUTES = TimeUnit.MINUTES.toMillis(6);
 
     private final Binder mBinder = new Binder();
     private TimerCallbacks mCallbacks;
@@ -172,7 +172,7 @@ public class TimerService extends Service {
         @Override
         public void onTick(long millisUntilFinished) {
             this.millisElapsed += (this.millisUntilFinished - millisUntilFinished);
-            if (this.millisElapsed >= INTERVAL_MILLS_FIVE_MINUTES &&
+            if (this.millisElapsed >= INTERVAL_MILLS_SIX_MINUTES &&
                     this.currentPoint <= this.maxPoint) {
                 this.currentPoint++;
                 this.millisElapsed = 0L;

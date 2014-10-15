@@ -7,6 +7,7 @@ import android.app.Service;
 import android.content.Context;
 import android.content.Intent;
 import android.graphics.BitmapFactory;
+import android.graphics.Color;
 import android.support.v4.app.NotificationCompat;
 
 /**
@@ -52,6 +53,8 @@ public final class Notifications {
                 .setContentTitle(context.getString(R.string.notification_finish_title))
                 .setContentText(context.getString(R.string.notification_finish_content_format, point))
                 .setWhen(System.currentTimeMillis())
+                .setVibrate(new long[] {100, 200, 100, 500})
+                .setLights(Color.WHITE, 1000, 500)
                 .setAutoCancel(true);
 
         final NotificationManager nm = (NotificationManager) context.getSystemService(

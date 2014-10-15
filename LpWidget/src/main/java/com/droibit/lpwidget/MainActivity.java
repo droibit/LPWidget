@@ -10,6 +10,7 @@ import android.os.IBinder;
 import android.preference.PreferenceManager;
 import android.text.TextUtils;
 import android.util.Log;
+import android.util.TimeUtils;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
@@ -128,11 +129,19 @@ public class MainActivity extends Activity implements TimerCallbacks {
     /** {@inheritDoc} */
     @Override
     public void onUpdate(long millisUntilFinished, int currentPoint) {
-        final long hours = TimeUnit.MILLISECONDS.toHours(millisUntilFinished) % 24;
+
+        final long hours;
+        // 経過時間が1日を超える場合は計算方法を代えないと丸められてしまう。
+        if (TimeUnit.MILLISECONDS.toDays(1) < millisUntilFinished) {
+            hours = TimeUnit.MILLISECONDS.toHours(millisUntilFinished);
+        } else {
+            hours = TimeUnit.MILLISECONDS.toHours(millisUntilFinished) % 24;
+        }
         final long minutes = TimeUnit.MILLISECONDS.toMinutes(millisUntilFinished) % 60;
         final long seconds = TimeUnit.MILLISECONDS.toSeconds(millisUntilFinished) % 60;
 
         mEditCurrentPoint.setPoint(String.valueOf(currentPoint));
+        // LPが999の場合でも97時間のためフォーマットは変更しない。
         mTextTimer.setText(String.format("%02d:%02d:%02d", hours, minutes, seconds));
     }
 
@@ -187,7 +196,7 @@ public class MainActivity extends Activity implements TimerCallbacks {
             Toast.makeText(this, R.string.toast_point_is_full, Toast.LENGTH_SHORT).show();
             return;
         }
-        final long diffTimeMills = TimeUnit.MINUTES.toMillis(diffPoint * 5);
+        final long diffTimeMills = TimeUnit.MINUTES.toMillis(diffPoint * 6);
 
         toggleEnableEditViews(false);
         // カウント前に時間およびポイントをビューに反映させておく
