@@ -1,4 +1,12 @@
-# License
+## LP Timer
+ラブライブ！のソーシャルゲーム、スクールアイドルフェスティバル（スクフェス）のLPが回復したことを通知してくれるアプリです。
+
+![Image](http://cl.ly/image/3i391Z0W1K3O/image.png)
+
+### Download
+[LP Timer : GooglePlay](https://play.google.com/store/apps/details?id=com.droibit.lpwidget)
+
+## License
 
     Copyright 2014 droibit
 
