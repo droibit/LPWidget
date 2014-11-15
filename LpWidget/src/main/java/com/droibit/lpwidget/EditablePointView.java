@@ -3,8 +3,6 @@ package com.droibit.lpwidget;
 import android.content.Context;
 import android.content.res.TypedArray;
 import android.text.Editable;
-import android.text.InputFilter;
-import android.text.Spanned;
 import android.text.TextUtils;
 import android.text.TextWatcher;
 import android.util.AttributeSet;
@@ -13,8 +11,6 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.LinearLayout;
 import android.widget.TextView;
-
-import com.droibit.lpwidget.R;
 
 /**
  * LP編集用のビュー。キーボード入力及びボタンによるインクリメント/デクリメントが可能。

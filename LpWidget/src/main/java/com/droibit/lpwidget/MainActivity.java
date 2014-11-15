@@ -10,7 +10,6 @@ import android.os.IBinder;
 import android.preference.PreferenceManager;
 import android.text.TextUtils;
 import android.util.Log;
-import android.util.TimeUtils;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
@@ -196,7 +195,7 @@ public class MainActivity extends Activity implements TimerCallbacks {
             Toast.makeText(this, R.string.toast_point_is_full, Toast.LENGTH_SHORT).show();
             return;
         }
-        final long diffTimeMills = TimeUnit.MINUTES.toMillis(diffPoint * 6);
+        final long diffTimeMills = TimeUnit.MINUTES.toMillis(diffPoint * 6); // TimeUnit.SECONDS.toMillis(10);
 
         toggleEnableEditViews(false);
         // カウント前に時間およびポイントをビューに反映させておく

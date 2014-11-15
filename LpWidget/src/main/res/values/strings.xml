@@ -24,4 +24,5 @@
     <string name="notification_begin_content_format">LP : %1$s/%2$s</string>
     <string name="notification_finish_title">LPが全回復しました</string>
     <string name="notification_finish_content_format">MAX : %1$s</string>
+    <string name="notification_action_play">スクフェス起動</string>
 </resources>

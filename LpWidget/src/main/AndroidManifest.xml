@@ -24,6 +24,12 @@
             </intent-filter>
         </activity>
         <service android:name=".TimerService" />
+
+        <receiver android:name=".PlayIntentReceiver" android:exported="false">
+            <intent-filter>
+                <action android:name="com.droibit.lpwidget.ACTION_PLAY" />
+            </intent-filter>
+        </receiver>
     </application>
 
 </manifest>

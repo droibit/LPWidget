@@ -18,7 +18,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/button_text_minus"
-        android:background="@drawable/selector_holo"
+        android:background="@drawable/counter_button"
         android:textAppearance="?android:attr/textAppearanceLarge"
         android:id="@+id/button_minus" />
 
@@ -35,7 +35,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/button_text_plus"
-        android:background="@drawable/selector_holo"
+        android:background="@drawable/counter_button"
         android:textAppearance="?android:attr/textAppearanceLarge"
         android:id="@+id/button_plus" />
 
