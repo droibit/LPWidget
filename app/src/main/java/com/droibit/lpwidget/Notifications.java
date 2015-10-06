@@ -18,7 +18,6 @@ import static com.droibit.lpwidget.PlayIntentReceiver.EXTRA_PLAY_INTENT;
  * LPの回復開始および終了時の通知を出すためのユーティリティクラス
  *
  * @author kumagai
- * @since 2014/04/04.
  */
 public final class Notifications {
 

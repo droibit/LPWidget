@@ -5,7 +5,6 @@ package com.droibit.lpwidget;
  * LPが1回復した時と、LPが全回復した際に呼ばれる。
  *
  * @author kumagai
- * @since 2014/04/04.
  */
 public interface TimerCallbacks {
 

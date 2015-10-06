@@ -14,7 +14,6 @@ import java.util.concurrent.TimeUnit;
  * {@link CountDownTimer}を管理するためのサービス
  *
  * @author kumagai
- * @since 2014/04/01.
  */
 public class TimerService extends Service {
 

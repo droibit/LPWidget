@@ -16,7 +16,6 @@ import android.widget.TextView;
  * LP編集用のビュー。キーボード入力及びボタンによるインクリメント/デクリメントが可能。
  *
  * @author kumagai
- * @since 2014/04/01.
  */
 public class EditablePointView extends LinearLayout implements View.OnClickListener {
 

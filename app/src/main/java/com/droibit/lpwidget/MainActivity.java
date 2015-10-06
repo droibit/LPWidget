@@ -28,7 +28,6 @@ import static com.droibit.lpwidget.TimerService.KEY_PREF_MAX_POINT;
  * LPの回復のための{@link TimerService}を管理するためのアクティビティ
  *
  * @author kumagai
- * @since 2014/04/01.
  */
 public class MainActivity extends Activity implements TimerCallbacks {
 

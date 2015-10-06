@@ -9,7 +9,6 @@ import android.content.Intent;
  * 通知のアクションから直接アプリを起動すると通知自体がキャンセルされないため。
  *
  * @author kumagai
- * @since 2014/11/15.
  */
 public class PlayIntentReceiver extends BroadcastReceiver {
 
